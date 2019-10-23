@@ -163,10 +163,10 @@ module ImageProcessing
       def thumbnail(geometry, sharpen: {})
         magick.resize(geometry)
 
-        if sharpen
-          sharpen = SHARPEN_PARAMETERS.merge(sharpen)
-          magick.sharpen("#{sharpen[:radius]}x#{sharpen[:sigma]}")
-        end
+        # if sharpen
+        #   sharpen = SHARPEN_PARAMETERS.merge(sharpen)
+        #   magick.sharpen("#{sharpen[:radius]}x#{sharpen[:sigma]}")
+        # end
 
         magick
       end
